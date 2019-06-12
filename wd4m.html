@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Web design in 4 minutes</title>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+    </head>
+    <body>
+        <h1>Web design in 4 minutes</h1>
+        <p>by Ashwin</p>
+        <p>Lets say you urgently require skills to develop a website. What is it that you will do ?</p>
+
+        <h3>Content</h3>
+        <p>
+                The purpose of design is to enhance the presentation of the content it's applied to. It might sound obvious, but content being the primary element of a website, it should not be established as an afterthought.
+                
+                Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.
+                
+                Let's assume you've already finalised the content you want to publish and just created an empty style.css file, what is the first rule you can write?</p>
+        <h3>Centering</h3>
+        <p>Long lines of text can be hard to parse, and thus hard to read. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.
+                <pre>
+                body {
+                  margin: 0 auto;
+                  max-width: 50em;
+                }</pre>
+                After styling the text blocks, what about styling the text itself?</p>
+        <h3>Font Family</h3>
+        <p>The preowser's font defaults to "Times", which can look unappealing (mostly because it is the "unstyled" font). Switching to a sans-serif font like "Helvetica" or "Arial" can vastly improve the look of your page.
+                <pre>
+                body {
+                  font-family: "Helvetica", "Arial", sans-serif;
+                } </pre>
+                If you want to stick with a serif font, try "Georgia".
+                
+                While this makes the text more appealing, let's also make it more readable.</p>
+
+        <h3>Spacing</h3>
+        <p>When a page looks "broken" to a user, it's usually a spacing issue. Providing space both around and within your content can increase the appeal of your page.
+                <pre>
+                body {
+                  line-height: 1.5;
+                  padding: 4em 1em;
+                }
+                
+                h2 {
+                  margin-top: 1em;
+                  padding-top: 1em;
+                }</pre>
+                While the layout has greatly improved so far, let's apply more subtle changes.</p>
+        <h3>Color and contrast</h3>
+        <p>Black text on a white background can be harsh on the eyes. Opting for a softer shade of black for body text makes the page more comfortable to read.
+                <pre>
+                body {
+                  color: #555;
+                }</pre>
+                And in order to keep a decent level of contrast, let's pick a darker shade for important words
+                <pre>
+                h1,
+                h2,
+                strong {
+                  color: #333;
+                }</pre>
+        
+                While most of the page has been improved visually, some elements (like the code snippets) still seem out of place.</p>
+        <h3>Balance</h3>
+        <p>
+                It only takes a few additional touches to correct the balance of the page:
+                <pre>
+                code,
+                pre {
+                  background: #eee;
+                }
+                
+                code {
+                  padding: 2px 4px;
+                  vertical-align: text-bottom;
+                }
+                
+                pre {
+                  padding: 1em;
+                }
+                </pre>
+                At this point, you might want to make your page stand out and give it identity.
+        </p>
+        <h3>Identity</h3>
+        <p>
+                Most brands have a primary color that acts as a visual accent. On a website, this accent can be used to provide emphasis on interactive elements, like links.
+                <pre>
+                a {
+                  color: #e81c4f;
+                }</pre>
+                But to keep the balance, we will need some additional colors.
+        </p>
+        <h3>Secondary colors</h3>
+        <p>
+                The accent color can be complemented with more subtle shades, to be used on borders, backgrounds, or even the body text.
+                <pre>
+                body {
+                  color: #566b78;
+                }
+                
+                code,
+                pre {
+                  background: #f5f7f9;
+                  border-bottom: 1px solid #d8dee9;
+                  color: #a7adba;
+                }
+                
+                pre {
+                  border-left: 2px solid #69c;
+                }
+            </pre>
+
+                Having changed the shades, why not change the shapes...
+        </p>
+        <h3>Custom font</h3>
+        <p>
+                Since text is the main content of a webpage, using a custom font gives the page even more noticeable identity.
+
+                While you can embed your own webfont or use an online service like Typekit, let's use "Roboto" from the free Google Fonts service:
+                <pre>
+                @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+                
+                body {
+                  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                }
+                </pre>
+                After enhancing your identity through text, how about adding a thousand words...
+        </p>
+        </body>
+</html>
