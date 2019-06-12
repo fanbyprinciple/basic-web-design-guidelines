@@ -1,0 +1,40 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+
+    font-family: "Georgia", sans-serif;
+
+    line-height: 1.5;
+    padding: 4em 1em;
+
+    color: #566b78;
+
+  }
+
+h1,strong {
+    color: #333
+}
+h3 {
+    margin-top: 1em;
+    padding-top: 1em;
+    color: #851ce8
+  }
+
+pre {
+    background: #f5f7f9;;
+    padding: 1em;
+    vertical-align: text-bottom;
+    color: #6e727a;
+    
+    border-bottom: 1px solid #d8dee9;
+    border-left: 2px solid #69c;
+}
+
+a {
+    color: #851ce8;
+  }
+
+img {
+  margin: 0 auto;
+  max-width: 50em;
+}

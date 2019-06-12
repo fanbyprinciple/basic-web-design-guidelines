@@ -126,5 +126,62 @@
                 </pre>
                 After enhancing your identity through text, how about adding a thousand words...
         </p>
+        <h3>Images</h3>
+        <img src="images.png" alt="Spongebob squarepants">
+        <p>
+          Graphics and icons can be used either as ornaments to support your content, or actively take part in the message you want to convey.
+
+          Let's enhance our header with a nice background image from Unsplash
+            <pre>
+            header {
+              background-color: #263d36;
+              background-image: url("header.jpg");
+              background-position: center top;
+              background-repeat: no-repeat;
+              background-size: cover;
+              line-height: 1.2;
+              padding: 10vw 2em;
+              text-align: center;
+            }
+            </pre>
+            Let's also add a logo
+
+            <pre>
+            header img {
+              display: inline-block;
+              height: 120px;
+              vertical-align: top;
+              width: 120px;
+            }
+            Let's take that opportunity to enhance the text styles.
+
+            header h1 {
+              color: white;
+              font-size: 2.5em;
+              font-weight: 300;
+            }
+
+            header a {
+              border: 1px solid #e81c4f;
+              border-radius: 290486px;
+              color: white;
+              font-size: 0.6em;
+              letter-spacing: 0.2em;
+              padding: 1em 2em;
+              text-transform: uppercase;
+              text-decoration: none;
+              transition: none 200ms ease-out;
+              transition-property: color, background;
+            }
+
+            header a:hover {
+              background:  #e81c4f;
+              color: white;
+            }
+            </pre>
+            And voilà!
+
+            We've designed a decent page in just a few minutes, following basic principles of web design. There's only one last thing left to do...
+        </p>
         </body>
 </html>
